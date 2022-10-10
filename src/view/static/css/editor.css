@@ -1,0 +1,15 @@
+#editor{
+    height: 600px;
+    width: 100%;
+}
+.text_div{
+    display:flex;
+}
+#result_text{
+    height: 170px;
+    width: 620px;
+}
+#input_data{
+    height: 170px;
+    width: 200px;
+}

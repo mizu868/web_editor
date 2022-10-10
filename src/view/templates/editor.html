@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script defer src="../static/ace-builds/src/ace.js"></script>
+        <script defer src="../static/ace-builds/src/ext-language_tools.js"></script>
+        <script defer src="../static/js/editor.js"></script>
+        <script defer src="../static/js/jquery-3.6.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="../static/css/editor.css">
+    </head>
+    <body>
+        <div id="select_lang">
+            言語:
+            <select id="langs" name="lang" form="exec_source_form" onchange="selectLang()">
+                <option value="python" selected>Python</option>
+                <option value="java">Java</option>
+            </select>
+        </div>
+        <div id="editor"></div>
+        <form id="exec_source_form" name="myform" action="/source_exec" method="post" accept-charset="UTF-8">
+            <button id="exec">実行</button>
+        </form>
+        <textarea id="result_text" readonly></textarea>
+    </body>
+</html>
