@@ -1,4 +1,4 @@
-FROM amazonlinux:latest
+FROM amazonlinux:2
 
 RUN yum -y update
 RUN yum -y upgrade
